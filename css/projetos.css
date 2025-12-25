@@ -54,11 +54,27 @@
   color: #525252;
   font-size: 0.9rem;
 }
-
-.projeto-titulo {
+.projeto-teste {
+  color: #141414;
   font-size: 1.2rem;
   line-height: 1.1;
   font-weight: bold;
+}
+
+.projeto-teste a:link,
+.projeto-teste a:visited,
+.projeto-teste a:hover,
+.projeto-teste a:active {
+  text-decoration: none;
+  color: #141414; /* força a cor do título */
+  font: inherit;
+}
+
+/* cargo */
+.projeto-titulo {
+  font-size: 1.125rem;
+  color: #525252;
+  font-weight: bold; /* aqui força o negrito */
 }
 
 .projeto-texto {
