@@ -1,3 +1,6 @@
+/* ============================
+   Seção de Projetos
+============================ */
 .projetos {
   max-width: 1200px;
   padding: 40px 20px;
@@ -23,6 +26,9 @@
   color: #141414;
 }
 
+/* ============================
+   Bloco de cada Projeto
+============================ */
 .projeto {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -45,6 +51,9 @@
   left: -4px;
 }
 
+/* ============================
+   Elementos internos
+============================ */
 .projeto-ano {
   position: absolute;
   top: 23px;
@@ -54,6 +63,7 @@
   color: #525252;
   font-size: 0.9rem;
 }
+
 .projeto-teste {
   color: #141414;
   font-size: 1.2rem;
@@ -61,20 +71,9 @@
   font-weight: bold;
 }
 
-.projeto-teste a {
-  transition: text-decoration 0.2s ease, color 0.2s ease;
-}
-
-.projeto-teste a:hover {
-  text-decoration: underline;
-  color: #000; /* leve destaque */
-}
-
-/* cargo */
 .projeto-titulo {
-  font-size: 1.125rem;
-  color: #525252;
-  font-weight: bold; /* aqui força o negrito */
+  font-size: 1.125rem; /* corrigido */
+  font-weight: bold;
 }
 
 .projeto-texto {
@@ -98,6 +97,23 @@
   padding: 5px 10px;
 }
 
+/* ============================
+   Links nos títulos
+============================ */
+.projeto-teste a,
+.projeto-teste a:visited,
+.projeto-teste a:hover,
+.projeto-teste a:active,
+.projeto-teste a:focus {
+  color: #000; /* sempre preto */
+  text-decoration: none !important; /* nunca sublinha */
+  font-weight: bold; /* mantém negrito */
+  cursor: default; /* não mostra a mãozinha */
+}
+
+/* ============================
+   Responsividade
+============================ */
 @media (max-width: 800px) {
   .projetos {
     grid-template-columns: 1fr;
