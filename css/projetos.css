@@ -61,13 +61,13 @@
   font-weight: bold;
 }
 
-.projeto-teste a:link,
-.projeto-teste a:visited,
-.projeto-teste a:hover,
-.projeto-teste a:active {
-  text-decoration: none;
-  color: #141414; /* força a cor do título */
-  font: inherit;
+.projeto-teste a {
+  transition: text-decoration 0.2s ease, color 0.2s ease;
+}
+
+.projeto-teste a:hover {
+  text-decoration: underline;
+  color: #000; /* leve destaque */
 }
 
 /* cargo */
@@ -94,7 +94,7 @@
   font-size: 0.9rem;
   line-height: 1.4;
   border-radius: 4px;
-  background: #ffff;
+  background: #ffffff;
   padding: 5px 10px;
 }
 
