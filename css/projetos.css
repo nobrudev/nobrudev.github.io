@@ -38,6 +38,12 @@
   margin-bottom: 60px;
   border-radius: 4px;
   position: relative;
+  cursor: pointer !important;
+  transition: background-color 0.3s;
+}
+
+.projeto:hover {
+  background-color: #f0f0f0;
 }
 
 .projeto::before {
@@ -97,6 +103,10 @@
   padding: 5px 10px;
 }
 
+.projeto .projeto-teste a {
+  cursor: pointer !important;
+}
+
 /* ============================
    Links nos títulos
 ============================ */
@@ -108,7 +118,7 @@
   color: #000; /* sempre preto */
   text-decoration: none !important; /* nunca sublinha */
   font-weight: bold; /* mantém negrito */
-  cursor: default; /* não mostra a mãozinha */
+  cursor: inherit; /* herda o cursor do .projeto */
 }
 
 /* ============================
