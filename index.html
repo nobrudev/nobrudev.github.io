@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pr-BR">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -40,7 +40,7 @@
       <p class="projetos-texto">Ao longo da minha trajetória, criei projetos que enriqueceram meu portfólio e consolidaram minhas habilidades em <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Bikcraft, GTA V e One Piece, são trabalhos que demonstram minha capacidade de unir estrutura, estilo e interatividade para entregar páginas funcionais e atrativas.
       </p>
 
-      <div class="projeto">
+      <div class="projeto" id="projeto-bikcraft">
         <span class="projeto-ano">2025</span>
         <h3 class="projeto-teste">
           <a>Bikcraft</a>
@@ -55,6 +55,13 @@
           <li>UI Design</li>
         </ul>
       </div>
+
+      <script>
+        document.getElementById("projeto-bikcraft").addEventListener("click", function () {
+          window.open("https://nobrudev.github.io/bikcraft/", "_blank");
+        });
+      </script>
+
 
 
       <div class="projeto" id="projeto-gta">
