@@ -72,7 +72,7 @@ img {
   display: block;
   height: 2px;
   width: 0%;
-  background: #b6f829;
+  background: #fd6718;
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
@@ -113,12 +113,13 @@ img {
 .introducao h1::before {
   content: "";
   display: block;
-  width: 130px;
-  height: 100px;
-  background: url(../img/detalhe.svg) no-repeat center;
+  width: 220px;
+  height: 180px;
+  background: url(../img/Logo100fundo.png) no-repeat center;
+  background-size: contain;
   position: absolute;
-  top: -15px;
-  left: -40px;
+  top: -45px;
+  left: -150px;
   z-index: -1;
 }
 .introducao p {
@@ -185,7 +186,7 @@ img {
 }
 
 .projeto:hover {
-  background-color: #b6f829;
+  background-color: #fd6718;
 }
 
 .projeto::before {
@@ -193,7 +194,7 @@ img {
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(#b6f829, #c7dd0a);
+  background: linear-gradient(#fb750d, #fa2d2e);
   position: absolute;
   top: 20px;
   left: -4px;
@@ -272,12 +273,14 @@ img {
 .formacao-container::after {
   content: "";
   display: block;
-  width: 130px;
-  height: 100px;
-  background: url("../img/detalhe.svg") no-repeat center;
+  width: 220px;
+  height: 160px;
+  background: url("../img/Logo_sem_fundo-removebg-preview.png") no-repeat center;
+  background-size: contain;
   position: absolute;
-  bottom: -50px;
-  left: 20px;
+  bottom: -82px;
+  left: -120px;
+  mix-blend-mode: screen;
 }
 .formacao .subtitulo {
   color: #000;
@@ -324,7 +327,7 @@ img {
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(#b6f829, #c7dd0a);
+  background: linear-gradient(#fb750d, #fa2d2e);
   position: absolute;
   left: -24px;
 }
@@ -354,9 +357,13 @@ img {
 }
 .cursos h3::before {
   background: url("../img/cursos.svg") no-repeat center center;
+  filter: invert(22%) sepia(100%) saturate(3779%) hue-rotate(347deg)
+    brightness(118%) contrast(96%);
 }
 .idiomas h3::before {
   background: url("../img/idiomas.svg") no-repeat center center;
+  filter: invert(22%) sepia(100%) saturate(3779%) hue-rotate(347deg)
+    brightness(118%) contrast(96%);
 }
 .formacao-extra li {
   font-size: 1.125rem;
@@ -447,4 +454,21 @@ img {
   text-decoration: none !important;
   font-weight: bold;
   cursor: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fd6718;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fa2d2e;
 }
