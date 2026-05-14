@@ -453,7 +453,7 @@ img {
   cursor: inherit;
 }
 * {
-  cursor: none;
+  cursor: none !important;
   scrollbar-width: thin;
   scrollbar-color: #fd6718 #1a1a1a;
 }
